@@ -2,6 +2,12 @@
   <div class="calc-body">
     <div class="calc-screen">
       <div class="calc-typed">
+        {{ (currentNumber$ | async)?.currentNumber ?? 0}}
+        <br/>
+        {{ (currentNumber$ | async)?.previousNumber ?? 0}}
+
+      </div>
+      <div class="calc-typed">
         {{ (currentNumber$ | async)?.result ?? 0}}
         <!-- <span class="blink-me">_</span> -->
       </div>

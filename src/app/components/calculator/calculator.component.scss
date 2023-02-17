@@ -21,6 +21,10 @@ body {
 }
 
 .calc-screen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background: #3a4655;
   width: 100%;
   height: 150px;
